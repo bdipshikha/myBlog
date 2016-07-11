@@ -20,6 +20,8 @@
 	.btn-secondary {
 		width: 100%;
 		font-size: 20px;
+		background-color: #3fb2bb;
+		color: white;
 	}
 </style>
 
@@ -58,9 +60,6 @@
 		<%= f.text_field :image, value: @post.image %>
 		</br></br>
 
-		<%= f.label :Author %></br>
-		<%= f.text_field :author, value: @post.author %>
-		</br></br>
 
 		<%= f.submit 'Update Post!', :class => "btn btn-secondary" %>
 	<% end %>
